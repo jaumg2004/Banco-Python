@@ -45,7 +45,7 @@ class ContaBancaria:
     def ver_extrato(self):
         print("Extrato:")
         print(self.extrato)
-        print(f"Saldo atual: R$ {self.saldo:.2f}\n")
+        print(f"Saldo atual: R$ {self.saldo:.2f}")
         print(datetime.now())
 
 conta = ContaBancaria()
