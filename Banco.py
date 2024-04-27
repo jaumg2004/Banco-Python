@@ -13,7 +13,7 @@ class ContaBancaria:
             self.saldo += valor
             self.extrato += f"Depósito: R$ {valor:.2f}\n"
             d = datetime.now()
-            print(f"Horário do deposito: {d.strftime('%d/%m/%Y %H:%M ')}")
+            print(f"Horário do deposito: {d.strftime('%d/%m/%Y %H:%M:%S ')}")
             return True
         else:
             print("Operação falhou! O valor informado é inválido")
@@ -38,7 +38,7 @@ class ContaBancaria:
             self.extrato += f"Saque R$: {valor:.2f}\n"
             self.numero_saques += 1
             d = datetime.now()
-            print(f"Horário do saque: {d.strftime('%d/%m/%Y %H:%M ')}")
+            print(f"Horário do saque: {d.strftime('%d/%m/%Y %H:%M:%S ')}")
             return True
         else:
             print("Operação falhou! O valor informado é inválido")
@@ -49,7 +49,7 @@ class ContaBancaria:
         print(self.extrato)
         print(f"Saldo atual: R$ {self.saldo:.2f}")
         d = datetime.now()
-        print(f"Horário: {d.strftime('%d/%m/%Y %H:%M ')}")
+        print(f"Horário: {d.strftime('%d/%m/%Y %H:%M:%S ')}")
 
 conta = ContaBancaria()
 menu = """[d]-depositar
