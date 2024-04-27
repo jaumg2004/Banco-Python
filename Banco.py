@@ -45,10 +45,10 @@ class ContaBancaria:
 
 conta = ContaBancaria()
 menu = """[d]-depositar
-          [s]-sacar
-          [e]-extrato
-          [q]-sair
-           """
+[s]-sacar
+[e]-extrato
+[q]-sair
+"""
 
 while True:
     opcao = input(menu)
