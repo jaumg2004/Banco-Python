@@ -46,7 +46,7 @@ class ContaBancaria:
         print("Extrato:")
         print(self.extrato)
         print(f"Saldo atual: R$ {self.saldo:.2f}")
-        print(datetime.now())
+        print(f"Horário: {datetime.now()}")
 
 conta = ContaBancaria()
 menu = """[d]-depositar
